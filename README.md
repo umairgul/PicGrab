@@ -1,2 +1,2 @@
 # PicGrab
-Extract all present <img> tags from page.
+Extract all present \<img\> tags from page.
