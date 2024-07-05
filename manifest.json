@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "PicGrab",
+  "description": "Log image links on current page",
+  "version": "1.0",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "PicGrab"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting"
+  ]
+}
