@@ -29,11 +29,23 @@ fetchButton.addEventListener("click", async function () {
 function logImages() {
     let results = [];
 
-    imageTags = document.querySelectorAll("img");
+    let imageTags = document.querySelectorAll("img");
+    let pictureTags = document.querySelectorAll("pictures");
 
-    imageTags.forEach((element) => {
-        results.push(element.src);
-    });
+    if (imageTags.length > 0) {
+        imageTags.forEach((element) => {
+            results.push(element.src);
+        });
+    }
+
+    if (pictureTags.length > 0) {
+        pictureTags.forEach((element) => {
+            let sources = element.querySelectorAll("source");
+            sources.forEach((element) => {
+                results.push(element.srcset);
+            })
+        })
+    }
 
     return results;
 }
