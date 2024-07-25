@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "PicGrab",
-  "description": "Log image links on current page",
+  "description": "Extract images links on current page",
   "version": "1.0",
   "background": {
     "service_worker": "background.js"

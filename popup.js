@@ -1,7 +1,6 @@
-let fetchButton = document.querySelector("#fetchBtn");
 let images = document.querySelector("#results");
 
-fetchButton.addEventListener("click", async function () {
+document.addEventListener("DOMContentLoaded", async function () {
     let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
     chrome.scripting.executeScript({
